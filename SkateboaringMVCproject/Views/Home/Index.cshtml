@@ -1,31 +1,55 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "My Trick App";
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Skateboarding Tricks Counter</h1>
+    <p class="lead">Get started counting and logging your tricks now!</p>
+    <p><a href="Skateboardings/" class="btn btn-primary btn-lg">Start</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <h2>Trick Names </h2>
+        <p>You can add different types of tricks you'd like to learn or just log tricks you already know below!</p>
+        <p><a class="btn btn-default" href="TrickTypes/">Add Tricks</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
+
+
+
+
+
+
+
+
+    <form class="form-horizontal">
+        <fieldset>
+            <legend>Log in</legend>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                <div class="col-lg-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                </div>
+
+            </div>
+        </fieldset>
+    </form>
+    
+    <!------------------- <div class="col-md-4">
         <h2>Web Hosting</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    </div> &raquo;  --------------->
 </div>
