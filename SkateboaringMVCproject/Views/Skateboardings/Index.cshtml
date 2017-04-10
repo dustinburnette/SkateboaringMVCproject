@@ -1,0 +1,57 @@
+﻿@model IEnumerable<SkateboaringMVCproject.Models.Skateboarding>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NameOfTrick.TrickName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeEnd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Attempts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Landed)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameOfTrick.TrickName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeStart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeEnd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Attempts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Landed)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SkateboardingID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SkateboardingID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SkateboardingID })
+        </td>
+    </tr>
+}
+
+</table>
